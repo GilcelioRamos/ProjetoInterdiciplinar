@@ -1,0 +1,62 @@
+ion-toolbar {
+    --background: #004746; /* Cor do fundo da barra de ferramentas */
+}
+
+ion-title{ // Titulo historico
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+ion-content{
+    --background: #F2F2F2;
+}
+ion-button{
+    --background: #004647;
+}
+form { // caixa de texto
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004647;
+    font-size: 1.5rem;
+}
+
+input[type="text"] { 
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    width: 65%;
+}
+
+.box {
+    height: 200px;
+    border: 2px solid #4a5260;
+    margin-bottom: 15px;
+    background-color: #d3d3d3;
+    padding-top: 500px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 5px;
+    --background: #004647;
+    padding-top: 20px;
+}
+ion-back-button {
+    color: white;
+}

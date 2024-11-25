@@ -1,0 +1,38 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-list-header>Usuario</ion-list-header>
+          <ion-note>aluno&#64;mail.com</ion-note><br><br><br>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/home" routerDirection="root">
+              <ion-icon slot="start" name="home"></ion-icon>
+              <ion-label>Home</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+           
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/dados" routerDirection="root">
+              <ion-icon slot="start" name="document"></ion-icon>
+              <ion-label>Dados Pessoais</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerLink="/historico" routerDirection="root">
+              <ion-icon slot="start" name="analytics-outline"></ion-icon>
+              <ion-label>Histórico</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+        <ion-button class="logout-button" expand="full"  routerLink="/folder/inbox">
+          <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          Sair
+        </ion-button>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

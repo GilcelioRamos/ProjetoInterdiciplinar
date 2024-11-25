@@ -1,0 +1,49 @@
+ ion-toolbar {
+    --background: #004647; /* Cor do fundo da barra de ferramentas */
+  }
+  ion-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  ion-content {
+    --background: #F2F2F2; /* Cor de fundo do conteúdo */
+    padding: 16px;
+  }
+  
+  ion-list {
+    margin-top: 16px;
+  }
+  
+  ion-item {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  ion-label {
+    font-weight: bold;
+  }
+  
+  ion-button {
+    --background: #004647;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+  
+  ion-text {
+    font-size: 16px;
+  }
+  
+  ion-note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+  }
+  
+  ion-back-button {
+    color: white;
+}

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Recuperação de senha</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <form (ngSubmit)="onSubmit()">
+      <ion-item>
+        <ion-label position="stacked">Nova senha</ion-label>
+        <ion-input
+          type="password"
+          placeholder="Digite sua nova senha"
+          [(ngModel)]="novaSenha"
+          name="novaSenha"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Confirmação de senha</ion-label>
+        <ion-input
+          type="password"
+          placeholder="Confirme sua senha"
+          [(ngModel)]="confirmacaoSenha"
+          name="confirmacaoSenha"
+          required
+        ></ion-input>
+      </ion-item>
+
+      <ion-button
+        expand="block"
+        type="submit"
+        [disabled]="!novaSenha || !confirmacaoSenha">
+        Confirmar
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

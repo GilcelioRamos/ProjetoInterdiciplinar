@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Dados do Usuário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-input
+        type="nome"
+        fill="solid"
+        label="Nome"
+        labelPlacement="floating"
+        helperText="Nome completo"
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="telefone"
+      fill="solid"
+      label="Telefone"
+      labelPlacement="floating"
+      helperText="(xx)xxxxx-xxxx"
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="endereço"
+      fill="solid"
+      label="Endereço"
+      labelPlacement="floating"
+      helperText=""
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="email"
+      fill="solid"
+      label="Email"
+      labelPlacement="floating"
+      helperText="Email válido"
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="Data de nascimento"
+      fill="solid"
+      label="Data de Nascimento"
+      labelPlacement="floating"
+      helperText="xx/xx/xxxx"
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="RG"
+      fill="solid"
+      label="RG"
+      labelPlacement="floating"
+      helperText="xx-xxx-xxx-x"
+></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input
+      type="CPF"
+      fill="solid"
+      label="CPF"
+      labelPlacement="floating"
+      helperText="xxx.xxx.xxx-xx"
+></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" type="submit">
+    <ion-icon name="save" slot="start"></ion-icon>
+    Salvar Alterações
+  </ion-button>
+</ion-content>

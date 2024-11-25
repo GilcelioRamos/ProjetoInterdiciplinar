@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Histórico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+        <form>
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" placeholder="Digite seu CPF">
+            <ion-button expand="block" type="submit">
+              <ion-icon name="search" slot="start"></ion-icon>
+              Pesquisar
+            </ion-button><br>
+            <div class="box"></div>
+            <ion-button expand="block" class="download-btn">
+              <ion-icon name="download-outline" slot="start"></ion-icon>
+              Baixar
+            </ion-button>
+            
+        </form>
+  
+</ion-content>

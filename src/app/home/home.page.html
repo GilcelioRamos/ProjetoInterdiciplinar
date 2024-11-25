@@ -1,0 +1,26 @@
+
+<ion-content [fullscreen]="true">
+  
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+    <div class="container">
+      <h2>Bem vindo, Aluno!</h2>
+      <div class="card-grid">
+        <ion-card class="card" routerLink="/historico">
+          <ion-icon name="folder" slot="icon"></ion-icon>
+          <p>Histórico escolar</p>
+        </ion-card>
+        <ion-card class="card" routerLink="/dados">
+          <ion-icon name="archive" slot="icon"></ion-icon>
+          <p>Dados pessoais</p>
+        </ion-card>
+      </div>
+      <ion-button class="logout-button" expand="full"  routerLink="/folder/inbox">
+        <ion-icon name="log-out-outline" slot="start"></ion-icon>
+        Sair
+      </ion-button>
+    </div>
+  </ion-header>
+</ion-content>
