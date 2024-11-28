@@ -6,15 +6,23 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-    private apiUrl = 'https:/';
+  private apiUrl = 'http://localhost:3333';
 
   constructor(private http: HttpClient) { }
 
-    resetPassword(novaSenha: string, confirmacaoSenha: string): Observable<any> {
+    login(cpf: string, senha: string): Observable<any> {
       const body = {
-        novaSenha: novaSenha,
-        confirmacaoSenha: confirmacaoSenha,
+        cpf,
+        senha,
       };
-        return this.http.post('${this.apiUrl/reset-password', body);
+      return this.http.post(`${this.apiUrl}/login`, body);
     }
+
+    resetPassword(novaSenha: string, confirmacaoSenha: string){
+      const body = {
+        novaSenha,
+        confirmacaoSenha,
+      };
+      return this.http.post(`${this.apiUrl}/login`, body);
+    };
 }
